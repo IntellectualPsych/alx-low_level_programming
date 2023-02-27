@@ -1,4 +1,5 @@
 This README contains:
+
 0. 98 Battery st- A function that takes a pointer to an int as parameter and updates the value it points to 98
 1. Don't swap horses in crossing a stream- A function that swaps the values of two integers
 2. This report, by its very length, defends itself against the risk of being read- A function that returns the length of a string
@@ -11,5 +12,6 @@ This README contains:
 9. strcpy- A function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by des
 
 PLUS 2 ADVANCED TASKS
+
 10. Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers- A function that convert a string to an integer
 11. Don't hate the hacker, hate the code- A program that generates random valid passwords for the program 101-crackme
