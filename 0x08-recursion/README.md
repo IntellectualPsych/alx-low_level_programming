@@ -1,4 +1,5 @@
-This README contains:
+This README contains 6 manadatory tasks:
+
 
 0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget- A function that prints a string, followed by a new line
 1. Why is it so important to dream? Because, in my dreams we are together- A function that prints a string in reverse
@@ -12,4 +13,5 @@ This README contains:
 PLUS 2 ADVANCED TASKS 
 
 
-
+7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything- A function that returns 1 if a string is a palindrome and 0 if not
+8. Inception. Now, before you bother telling me it's impossible... - A function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
