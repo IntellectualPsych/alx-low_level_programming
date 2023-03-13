@@ -11,4 +11,5 @@ This README task contains the following:
 PLUS TWO ADVANCED 
 
 
-
+5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe- A function that concatenates all the arguments of your program
+6. I will show you how great I am- A function that splits a string into words
