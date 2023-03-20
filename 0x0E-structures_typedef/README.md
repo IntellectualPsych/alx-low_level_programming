@@ -21,7 +21,9 @@ FILES
 All of the following files are programs written in C: 
 
 
-Filename	Description
+Filename  and	Description
+
+
 0. Poppy	A new type struct dog with the following elements: 
 name, type = char *
 age, type = float
