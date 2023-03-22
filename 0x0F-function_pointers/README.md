@@ -47,4 +47,7 @@ This task requires the creation of four different files.
 Furthermore, this file contains all the function prototypes and data structures used by the program.
 
 
+4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker
+	 A program that prints the opcodes of its own main function.
+•	Usage: ./main number_of_bytes
 
