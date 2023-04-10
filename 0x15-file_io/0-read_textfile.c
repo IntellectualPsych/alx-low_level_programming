@@ -8,16 +8,15 @@
  * @filename: A pointer to the name of the file to read
  * @letters: The number of letters the function should read and print
  *
- * RETURN: If the function fails or filename is NULL - 0
- *	W - the actual number of bytes the function can read and print
+ * RETURN: W - the actual number of bytes the function can read and print
+ * 	If the function fails or filename is NULL - 0
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fd;
-	ssize_t n;
-	ssize_t w;
 	char *buffer;
+	ssize_t fd;
+	ssize_t w;
+	ssize_t n;
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
@@ -30,6 +29,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 	return (w);
 }
-/**
- *  File: 0-read_textfile.c
-*/
+
