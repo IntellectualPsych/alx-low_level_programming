@@ -2,27 +2,13 @@
 
 /**
  * print_binary - print binary representation of a decimal number
- * @a: number to print in binary
+ * @n: number to print in binary
  */
-void print_binary(unsigned long int a)
+void print_binary(unsigned long int n)
 {
-	int x, count = 0;
-	unsigned long int current;
-
-	for (x = 49; x >= 0; x--)
-	{
-		current = a >> x;
-
-		if (current & 1)
-		{
-			_putchar('1');
-			count++;
-		}
-		else if (count)
-			_putchar('0');
-	}
-	if (!count)
-		_putchar('0');
+	if (n > 1)
+		print_binary(n >> 1);
+	(n & 1) ? _putchar('1') : _putchar('0');
 }
 /**
  * File: 1-print_binary
