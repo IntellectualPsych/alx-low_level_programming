@@ -14,7 +14,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int flex;
 	unsigned long int fist = n ^ m;
 
-	for (i = 49; i >= 0; i--)
+	for (i = 63; i >= 0; i--)
 	{
 		flex = fist >> i;
 		if (flex & 1)
