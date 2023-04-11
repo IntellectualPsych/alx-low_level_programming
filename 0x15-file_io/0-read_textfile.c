@@ -13,20 +13,31 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	ssize_t fd = 0, nip = 0;
 	char *buffer;
-	ssize_t fd;
-	ssize_t w;
-	ssize_t n;
+
+	if (!filename || !letters)
+		return (0);
 
 	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	if (fd < 0)
 		return (0);
-	buffer = malloc(sizeof(char) * letters);
-	n = read(fd, buffer, letters);
-	w = write(STDOUT_FILENO, buffer, n);
 
-	free(buffer);
+	buffer = malloc(sizeof(char) * (letters));
+	if (!buffer)
+		return (0);
+
+	nip = read(fd, buffer, letters);
+	nip = write(STDOUT_FILENO, buffer, nip);
+	if (nip < 0)
+		return (0);
+
 	close(fd);
-	return (w);
+	free(buffer);
+	return (nip);
 }
+/**
+ *  File: 0-read_textfile.c
+ *  Author: Damilola Babayemi
+ */
 
